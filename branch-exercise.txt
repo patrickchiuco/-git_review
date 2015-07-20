@@ -2,6 +2,6 @@ Zero 0
 One 1
 Two 2
 Three 3
-Number 4
+Four 4
 Number 5
 Number 6
