@@ -1,0 +1,13 @@
+#GIT ignore files
+
+#Individual Files
+*.c
+!flying.c
+/*.a
+
+#Directories
+play-[0-3]/
+negation/
+!negation/test.scm
+folder-inside/testfolder[1-3]/**/apple
+
