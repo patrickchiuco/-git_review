@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Sample Page</title>
+  <script src="js/sample.js"></script>
+  <style>
+    .offscreen{
+      position: absolute;
+      clip: rect(1px 1px 1px 1px);
+      clip: rect(1px, 1px, 1px, 1px);
+      border: 0;
+      padding: 0;
+      height: 1px;
+      width: 1px;
+      overflow: hidden;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="offscreen">Sample Form Page</h1>
+  <main>
+    <h2>Sample Form</h2>
+    <div id="message">
+    </div>
+    <form>
+      <input type="text" id="user-input">
+      <button type="submit">
+    </form>
+  </main>
+</body>
+</html>
