@@ -3,7 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>Sample Page</title>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/sample.js"></script>
+
     <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <style>
       .offscreen{
@@ -16,7 +19,6 @@
         width: 1px;
         overflow: hidden;
       }
-
       #main-form{
         position:relative;
         top: 50px;
@@ -27,7 +29,9 @@
     <h1 class="offscreen">Sample Form Page</h1>
     <main class="container text-center">
       <h2 class="jumbotron">Sample Form</h2>
-      <div id="message">
+      <div id="message-container" class="hidden-xs hidden-sm hidden-md hidden-lg">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">x</button>
+        <span id="message"></span>
       </div>
       <form id="main-form" class="form-horizontal">
         <div class="form-group">
