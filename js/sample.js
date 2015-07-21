@@ -9,3 +9,16 @@ function init(){
 
   showMessageButton.onclick = showUserMessage();
 }
+
+function showUserMessage(){
+  var message = inputField.value;
+  var containterContents = messageContainer.innerHTML;
+  if(containterContents != ""){
+    messageContainer.innerHTML = "";
+  }
+  if(message == ""){
+    alert("Enter a message");
+  }else{
+    messageContainer.innerHTML = message;
+  }
+}
