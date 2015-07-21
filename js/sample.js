@@ -7,18 +7,18 @@ function init(){
   messageContainer = document.getElementById("message");
   showMessageButton = document.getElementById("show-message");
 
-  showMessageButton.onclick = showUserMessage();
+  showMessageButton.onclick = showUserMessage;
 }
 
 function showUserMessage(){
-  var message = inputField.value;
-  var containterContents = messageContainer.innerHTML;
-  if(containterContents != ""){
+  var userMessage = inputField.value;
+  var containerContents = messageContainer.innerHTML;
+  if(containerContents != ""){
     messageContainer.innerHTML = "";
   }
   if(message == ""){
     alert("Enter a message");
   }else{
-    messageContainer.innerHTML = message;
+    messageContainer.innerHTML = userMessage;
   }
 }
