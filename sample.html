@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>Sample Page</title>
     <script src="js/sample.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.min.css"/>
     <style>
       .offscreen{
         position: absolute;
@@ -19,14 +20,16 @@
   </head>
   <body onload="init()">
     <h1 class="offscreen">Sample Form Page</h1>
-    <main>
-      <h2>Sample Form</h2>
+    <main class="container">
+      <h2 class="jumbotron">Sample Form</h2>
       <div id="message">
       </div>
-      <form>
-        <label for="user-input">Message: </label>
-        <input type="text" id="user-input">
-        <button type="button" id="show-message">Show Message</button>
+      <form class="form-horizontal">
+        <div class="form-group">
+          <label for="user-input" class="cotrol-label">Message: </label>
+          <input type="text" id="user-input" placeholder="Message here." title="Enter any text">
+          <button type="button" id="show-message" class="btn btn-primary">Show Message</button>
+        </div>
       </form>
     </main>
   </body>
