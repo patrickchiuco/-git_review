@@ -1,7 +1,11 @@
-var input;
+var inputField;
 var messageContainer;
+var showMessageButton;
 
 function init(){
-  input = document.getElementById("user-input");
+  inputField = document.getElementById("user-input");
   messageContainer = document.getElementById("message");
+  showMessageButton = document.getElementById("show-message");
+
+  showMessageButton.onclick = showUserMessage();
 }
